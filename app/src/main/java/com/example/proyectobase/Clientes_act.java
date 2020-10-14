@@ -38,13 +38,17 @@ public class Clientes_act extends AppCompatActivity {
         String clienteC = spClientes.getSelectedItem().toString();
         String serviciosC = spServicios.getSelectedItem().toString();
         Servicios servicio = new Servicios();
-        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Maculino"))
+        int saldo =Integer.parseInt(edMontoCancelar.getText().toString());
+        int resultCortePCorto =servicio.getCorteCabelloCorto()-saldo;
+        int resultCortePlargo = servicio.getCorteCabelloLargo()-saldo ;
+
+        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Corto"))
         {
-            texto.setText("el precio de su servicio es: "+ servicio.getCorteCabelloCorto());
+            texto.setText("el precio de su servicio es: "+ resultCortePCorto);
         }
-        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Femenino"))
+        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Largo"))
         {
-            texto.setText("el precio de su servicio es: "+ servicio.getCorteCabelloLargo());
+            texto.setText("el precio de su servicio es: "+ resultCortePlargo);
 
         }
     }

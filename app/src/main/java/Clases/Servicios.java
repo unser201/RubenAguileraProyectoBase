@@ -1,18 +1,18 @@
 package Clases;
 
 public class Servicios {
-    private String corteCabelloCorto;
-    private String corteCabelloLargo;
+    private int corteCabelloCorto;
+    private int corteCabelloLargo;
     public Servicios()
     {
-        corteCabelloCorto = "15000";
-        corteCabelloLargo = "20000";
+        corteCabelloCorto = 15000;
+        corteCabelloLargo = 20000;
     }
-    public String getCorteCabelloCorto()
+    public int getCorteCabelloCorto()
     {
         return corteCabelloCorto;
     }
-    public String getCorteCabelloLargo()
+    public int getCorteCabelloLargo()
     {
         return corteCabelloLargo;
     }
