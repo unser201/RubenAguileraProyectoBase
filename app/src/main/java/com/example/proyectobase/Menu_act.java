@@ -51,6 +51,7 @@ public class Menu_act extends AppCompatActivity {
         ArrayList<String> arregloServicios = new ArrayList<String>();
         arregloClientes.add("Ivan");
         arregloClientes.add("Roberto");
+        arregloClientes.add("Marcelyne");
         arregloServicios.add("Corte de cabello Corto");
         arregloServicios.add("Corte de cabello Largo");
         Intent i = new Intent(this, Clientes_act.class);

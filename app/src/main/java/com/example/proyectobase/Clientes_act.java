@@ -42,11 +42,11 @@ public class Clientes_act extends AppCompatActivity {
         int resultCortePCorto =servicio.getCorteCabelloCorto()-saldo;
         int resultCortePlargo = servicio.getCorteCabelloLargo()-saldo ;
 
-        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Corto"))
+        if(serviciosC.equals("Corte de cabello Corto"))
         {
             texto.setText("el precio de su servicio es: "+ resultCortePCorto);
         }
-        if(clienteC.equals("Roberto")&& serviciosC.equals("Corte de cabello Largo"))
+        if(serviciosC.equals("Corte de cabello Largo"))
         {
             texto.setText("el precio de su servicio es: "+ resultCortePlargo);
 
